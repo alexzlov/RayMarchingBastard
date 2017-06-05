@@ -22,6 +22,11 @@ float dfSphere(float3 p, float s) {
 	return length(p) - s;
 }
 
+// Round box
+float dfRoundBox(float3 p, float3 b, float r) {
+	return length(max(abs(p) - b, 0.0)) - r;
+}
+
 //-------------------------------------------------------------------------------------
 //                                 OBJECTS COMBINATION
 //-------------------------------------------------------------------------------------
@@ -54,10 +59,12 @@ float dfIntersect(float d1, float d2) {
 float2 map (float3 p) {	
 	float2 d_torus = float2(dfTorus(p, float2(1, 0.2)), 0.5);
 	float2 d_box = float2(dfBox(p - float3(-3, 0, 0), float3(0.75, 0.5, 0.5)), 0.25);
+	float2 d_r_box = float2(dfRoundBox(p - float3(-3, -1.3, 0), float3(0.75, 0.3, 0.2), 0.3), 0.83);
 	float2 d_sph = float2(dfSphere(p - float3(-3, 0, 0), 0.6), 0);
 	float2 d_sphere = float2(dfSphere(p - float3(3, 0, 0), 1), 0.75);
 
 	float2 ret = dfUnion(d_torus, d_box);
+	ret = dfUnion(ret, d_r_box);
 	ret = dfUnion(ret, d_sph);
 	ret = dfUnion(ret, d_sphere);
 	return ret;

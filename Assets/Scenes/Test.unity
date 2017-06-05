@@ -184,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 305401682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.452, y: 0.204, z: -0.024}
+  m_LocalPosition: {x: -2.452, y: 0.17, z: -0.024}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _EffectShader: {fileID: 4800000, guid: e23f98601f06156499fe1bd1526ef30c, type: 3}
   SunLight: {fileID: 1083960266}
-  DebugMode: 1
+  DebugMode: 0
   _ColorRamp: {fileID: 2800000, guid: 3d057611701b0914a88973d2ffd0898c, type: 3}
   _PerfRamp: {fileID: 2800000, guid: 416820401026f254da137bbfd20315f0, type: 3}
 --- !u!81 &493757504
