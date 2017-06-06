@@ -15082,13 +15082,6 @@ Note: Use HandleUtility.GetHandleSize where you might want to have constant scre
       <summary>
         <para>Creates a new instance of the ArcHandle class.</para>
       </summary>
-      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your ArcHandle instances.</param>
-    </member>
-    <member name="M:UnityEditor.IMGUI.Controls.ArcHandle.#ctor(System.Int32)">
-      <summary>
-        <para>Creates a new instance of the ArcHandle class.</para>
-      </summary>
-      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your ArcHandle instances.</param>
     </member>
     <member name="M:UnityEditor.IMGUI.Controls.ArcHandle.DrawHandle">
       <summary>
@@ -15118,6 +15111,12 @@ Note: Use HandleUtility.GetHandleSize where you might want to have constant scre
       <summary>
         <para>Returns or specifies the size of the bounding box.</para>
       </summary>
+    </member>
+    <member name="M:UnityEditor.IMGUI.Controls.BoxBoundsHandle.#ctor">
+      <summary>
+        <para>Create a new instance of the BoxBoundsHandle class.</para>
+      </summary>
+      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your BoxBoundsHandle instances.</param>
     </member>
     <member name="M:UnityEditor.IMGUI.Controls.BoxBoundsHandle.#ctor(System.Int32)">
       <summary>
@@ -15149,6 +15148,12 @@ Note: Use HandleUtility.GetHandleSize where you might want to have constant scre
       <summary>
         <para>Returns or specifies the radius of the capsule bounding volume.</para>
       </summary>
+    </member>
+    <member name="M:UnityEditor.IMGUI.Controls.CapsuleBoundsHandle.#ctor">
+      <summary>
+        <para>Create a new instance of the CapsuleBoundsHandle class.</para>
+      </summary>
+      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your CapsuleBoundsHandle instances.</param>
     </member>
     <member name="M:UnityEditor.IMGUI.Controls.CapsuleBoundsHandle.#ctor(System.Int32)">
       <summary>
@@ -15598,6 +15603,12 @@ Note: Use HandleUtility.GetHandleSize where you might want to have constant scre
         <para>Z-axis (bit 2).</para>
       </summary>
     </member>
+    <member name="M:UnityEditor.IMGUI.Controls.PrimitiveBoundsHandle.#ctor">
+      <summary>
+        <para>Create a new instance of the PrimitiveBoundsHandle class.</para>
+      </summary>
+      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your PrimitiveBoundsHandle instances.</param>
+    </member>
     <member name="M:UnityEditor.IMGUI.Controls.PrimitiveBoundsHandle.#ctor(System.Int32)">
       <summary>
         <para>Create a new instance of the PrimitiveBoundsHandle class.</para>
@@ -15802,6 +15813,12 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <summary>
         <para>Returns or specifies the radius of the capsule bounding volume.</para>
       </summary>
+    </member>
+    <member name="M:UnityEditor.IMGUI.Controls.SphereBoundsHandle.#ctor">
+      <summary>
+        <para>Create a new instance of the SphereBoundsHandle class.</para>
+      </summary>
+      <param name="controlIDHint">An integer value used to generate consistent control IDs for each control handle on this instance. Avoid using the same value for all of your SphereBoundsHandle instances.</param>
     </member>
     <member name="M:UnityEditor.IMGUI.Controls.SphereBoundsHandle.#ctor(System.Int32)">
       <summary>
@@ -19666,6 +19683,11 @@ To force a reload of the mask, simply set  ModelImporterClipAnimation.maskSource
     <member name="P:UnityEditor.Networking.PlayerConnection.EditorConnection.ConnectedPlayers">
       <summary>
         <para>A list of the connected players.</para>
+      </summary>
+    </member>
+    <member name="M:UnityEditor.Networking.PlayerConnection.EditorConnection.DisconnectAll">
+      <summary>
+        <para>This disconnects all of the active connections.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.Networking.PlayerConnection.EditorConnection.Initialize">

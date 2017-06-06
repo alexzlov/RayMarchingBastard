@@ -16268,14 +16268,6 @@ Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Han
       <param name="methodName"></param>
       <param name="options"></param>
     </member>
-    <member name="M:UnityEngine.GameObject.CalculateBounds">
-      <summary>
-        <para>Calculate the bounds enclosing the GameObject (Editor Only).</para>
-      </summary>
-      <returns>
-        <para>The calculated bounds.</para>
-      </returns>
-    </member>
     <member name="M:UnityEngine.GameObject.CompareTag(System.String)">
       <summary>
         <para>Is this game object tagged with tag ?</para>
@@ -26763,22 +26755,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="evt">When to execute the command buffer during rendering.</param>
     </member>
-    <member name="M:UnityEngine.Light.SetAllLightsFalloffToInverseSquared">
-      <summary>
-        <para>Set falloff on all Lights to inverse squared.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Light.SetAllLightsFalloffToUnityLegacy">
-      <summary>
-        <para>Set falloff on all Lights to the Unity legacy falloff model.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.Light.SetFalloffTable(System.Single[])">
-      <summary>
-        <para>Set the table defining the falloff curve for the light source.</para>
-      </summary>
-      <param name="input">Array of 13 floats, defining the falloff curve.</param>
-    </member>
     <member name="T:UnityEngine.LightmapBakeType">
       <summary>
         <para>Enum describing what part of a light contribution can be baked.</para>
@@ -32716,6 +32692,11 @@ Can only be called by the relay group owner.</para>
         <para>Returns true when Editor is connected to the player.</para>
       </summary>
     </member>
+    <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.DisconnectAll">
+      <summary>
+        <para>This disconnects all of the active connections.</para>
+      </summary>
+    </member>
     <member name="M:UnityEngine.Networking.PlayerConnection.PlayerConnection.Register(System.Guid,UnityEngine.Events.UnityAction`1&lt;UnityEngine.Networking.PlayerConnection.MessageEventArgs&gt;)">
       <summary>
         <para>Registers a listener for a specific message ID, with an Action to be executed whenever that message is received by the Editor.
@@ -37213,6 +37194,11 @@ The Noise Module allows you to apply turbulence to the movement of your particle
     <member name="P:UnityEngine.ParticleSystemRenderer.lengthScale">
       <summary>
         <para>How much are the particles stretched in their direction of motion.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEngine.ParticleSystemRenderer.maskInteraction">
+      <summary>
+        <para>Specifies how the Particle System Renderer interacts with SpriteMask.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.ParticleSystemRenderer.maxParticleSize">

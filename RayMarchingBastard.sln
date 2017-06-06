@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayMarchingBastard", "RayMarchingBastard.csproj", "{CF07F2B3-321B-9660-C9F3-45ECEC86DCCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RayMarchingBastard.Editor", "RayMarchingBastard.Editor.csproj", "{CE8E1EE8-F37A-7E8D-C77E-539D814BE679}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,10 @@ Global
 		{CF07F2B3-321B-9660-C9F3-45ECEC86DCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF07F2B3-321B-9660-C9F3-45ECEC86DCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF07F2B3-321B-9660-C9F3-45ECEC86DCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE8E1EE8-F37A-7E8D-C77E-539D814BE679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE8E1EE8-F37A-7E8D-C77E-539D814BE679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE8E1EE8-F37A-7E8D-C77E-539D814BE679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE8E1EE8-F37A-7E8D-C77E-539D814BE679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

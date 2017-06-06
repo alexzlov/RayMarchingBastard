@@ -334,9 +334,9 @@
         <para>The GameObject that was selected first.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.EventSystems.EventSystem.isPaused">
+    <member name="P:UnityEngine.EventSystems.EventSystem.isFocused">
       <summary>
-        <para>Flag to say weather the EventSystem things it should be paused or not.</para>
+        <para>Flag to say weather the EventSystem thinks it should be paused or not based upon focused state.</para>
       </summary>
     </member>
     <member name="P:UnityEngine.EventSystems.EventSystem.pixelDragThreshold">
