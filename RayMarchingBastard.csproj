@@ -82,9 +82,26 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="IronScheme.Closures">
+      <HintPath>Assets\Library\Scheme\IronScheme.Closures.dll</HintPath>
+    </Reference>
+    <Reference Include="IronScheme.Scripting">
+      <HintPath>Assets\Library\Scheme\IronScheme.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="IronScheme">
+      <HintPath>Assets\Library\Scheme\IronScheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Oyster.IntX">
+      <HintPath>Assets\Library\Scheme\Oyster.IntX.dll</HintPath>
+    </Reference>
+    <Reference Include="ironscheme.boot">
+      <HintPath>Assets\Library\Scheme\ironscheme.boot.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\RaymarchFilter.cs" />
+    <Compile Include="Assets\Scripts\Raymarching\RaymarchingObject.cs" />
+    <Compile Include="Assets\Scripts\Raymarching\RaymarchingRenderer.cs" />
     <Compile Include="Assets\Scripts\Utils\SceneViewFilter.cs" />
   </ItemGroup>
   <ItemGroup>

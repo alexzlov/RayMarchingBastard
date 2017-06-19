@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0b8</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -129,6 +127,21 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="IronScheme.Closures">
+      <HintPath>Assets\Library\Scheme\IronScheme.Closures.dll</HintPath>
+    </Reference>
+    <Reference Include="IronScheme.Scripting">
+      <HintPath>Assets\Library\Scheme\IronScheme.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="IronScheme">
+      <HintPath>Assets\Library\Scheme\IronScheme.dll</HintPath>
+    </Reference>
+    <Reference Include="Oyster.IntX">
+      <HintPath>Assets\Library\Scheme\Oyster.IntX.dll</HintPath>
+    </Reference>
+    <Reference Include="ironscheme.boot">
+      <HintPath>Assets\Library\Scheme\ironscheme.boot.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="RayMarchingBastard.csproj">
@@ -141,6 +154,8 @@
     <Compile Include="Assets\Scripts\Editor\CodeEditorSettings.cs" />
     <Compile Include="Assets\Scripts\Editor\ColorScheme.cs" />
     <Compile Include="Assets\Scripts\Editor\FileWatcher.cs" />
+    <Compile Include="Assets\Scripts\Editor\MaterialEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor\Scheme\SchemeReplWindow.cs" />
     <Compile Include="Assets\Scripts\Editor\ShaderCodeEditor.cs" />
     <Compile Include="Assets\Scripts\Editor\ShaderGenerator.cs" />
     <Compile Include="Assets\Scripts\Editor\ShaderGeneratorEditor.cs" />
@@ -148,7 +163,6 @@
     <Compile Include="Assets\Scripts\Editor\ShaderTemplateSelector.cs" />
     <Compile Include="Assets\Scripts\Editor\Syntaxes\ShaderSyntax.cs" />
     <Compile Include="Assets\Scripts\Editor\Utils.cs" />
-    <Compile Include="Assets\Scripts\MaterialEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Shaders\BasicRayMarcher.shader" />
